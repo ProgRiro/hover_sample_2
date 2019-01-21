@@ -1,0 +1,38 @@
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        margin: 25px auto;
+        padding: 100px;
+        width: 700px;
+    }
+
+    .parentBox {
+        height: 50px;
+        width: 200px;
+        padding: 0;
+        border: 2px solid black;
+    }
+
+    .childBox {
+        height: 100%;
+        width: 0;
+        background-color: greenyellow;
+        opacity: .7;
+        transition: 1s;
+    }
+
+    .parentBox:hover .childBox {
+        width: 100%;
+        opacity: 1;
+    }
+</style>
+
+<div class="container">
+    <div class="ParentBox">
+        <div class="childBox"></div>
+    </div>
+    <p>hover action</p>
+</div>
